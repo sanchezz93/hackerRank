@@ -9,13 +9,14 @@ using namespace std;
 
 
 int main() {
- 	double iSize;
- 	int input;
-	cin >> iSize;
+ 	int iSize,variable;
+ 	cin >> iSize;
+ 	variable = 0;
  	for(int i=0;i < iSize;i++){
- 		for(int j=iSize;j > 0;j--){
+ 		for(int j=variable;j > 0;j--){
  			cout << "#";
  		}
+ 		variable++;
  		cout << endl;
  	}
 
