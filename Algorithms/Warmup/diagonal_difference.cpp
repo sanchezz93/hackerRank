@@ -18,12 +18,24 @@ using namespace std;
 int main() {
  	int iSize;
 	cin >> iSize;
- 	int matInput;
+ 	int matInput[iSize][iSize];
  	for(int i=0;i < iSize;i++){
  		for(int j=0;j<iSize;j++){
  			cin>> matInput[i][j];
  		}
  	}
- 	
+ 	int diag_1=0, diag_2=0;
+
+ 	for(int i=0; i <iSize;i++){
+ 		for(int j=0;j <iSize;j++){
+ 			if(i==j){
+ 				diag_1 += matInput[i][j];
+ 			}
+ 			if(i+j==(iSize-1)){
+ 				diag_2 += matInput[i][iSize-i-1];
+ 			}
+ 		}
+ 	}
+ 	cout << abs(diag_1-diag_2) << endl;
  	return 0;
  }
