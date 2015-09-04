@@ -15,13 +15,9 @@ int main() {
  	int aux = spaces;
  	for(int i=0;i < iSize;i++){
  		for(int j=0;j <iSize;j++){
- 			if(aux==0){
- 				cout << "#";
- 			}
- 			aux--;
+ 			
  		}
- 		spaces--;
- 		cout << endl;
+ 		
  	}
 
  	

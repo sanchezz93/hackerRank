@@ -24,6 +24,6 @@ int main() {
  			cin>> matInput[i][j];
  		}
  	}
-
+ 	
  	return 0;
  }
