@@ -9,15 +9,20 @@ using namespace std;
 
 
 int main() {
- 	int iSize,spaces;
+ 	int iSize,variable;
  	cin >> iSize;
- 	spaces = (iSize-1);
- 	int aux = spaces;
+ 	variable = 0;
+ 	int spaces = iSize;
  	for(int i=0;i < iSize;i++){
- 		for(int j=0;j <iSize;j++){
- 			
+ 		for(int j=variable;j > 0;j--){
+ 			if(spaces == 0){
+ 				cout << "#";	
+ 			}else{
+ 				cout << " ";
+ 			}
  		}
- 		
+ 		variable++;
+ 		cout << endl;
  	}
 
  	

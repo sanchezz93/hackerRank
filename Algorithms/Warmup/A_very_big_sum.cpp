@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  a_very_big_sum.cpp
 //  hackerRank
 //
 //  Created by Alejandro Sanchez on 1/8/15.
